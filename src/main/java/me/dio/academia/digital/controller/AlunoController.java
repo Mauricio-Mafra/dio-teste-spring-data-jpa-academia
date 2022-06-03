@@ -26,6 +26,11 @@ public class AlunoController {
     }
 
 
+    @GetMapping("alunos/{id}")
+    public Aluno get(@RequestBody Long id){
+        return service.get(id);
+    }
+
     @PostMapping
     public Aluno createAluno(@RequestBody AlunoForm form){
         return service.create(form);

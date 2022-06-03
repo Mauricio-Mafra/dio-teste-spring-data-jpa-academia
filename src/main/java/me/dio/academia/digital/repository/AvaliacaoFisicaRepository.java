@@ -1,4 +1,11 @@
 package me.dio.academia.digital.repository;
 
-public interface AvaliacaoFisicaRepository {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import me.dio.academia.digital.entity.AvaliacaoFisica;
+
+public interface AvaliacaoFisicaRepository extends JpaRepository<AvaliacaoFisica, Long>{
+
+    
 }

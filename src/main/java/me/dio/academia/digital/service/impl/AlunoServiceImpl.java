@@ -31,8 +31,7 @@ public class AlunoServiceImpl implements IAlunoService{
 
     @Override
     public Aluno get(Long id) {
-        // TODO Auto-generated method stub
-        return null;
+        return repository.getById(id);
     }
 
     @Override
