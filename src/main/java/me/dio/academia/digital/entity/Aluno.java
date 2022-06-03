@@ -38,7 +38,6 @@ public class Aluno {
   private String nome;
 
   @Column(unique = true)
-  @CPF
   private String cpf;
 
   private String bairro;
@@ -49,4 +48,36 @@ public class Aluno {
   @JsonIgnore
   private List<AvaliacaoFisica> avaliacoes = new ArrayList<>();
 
+
+  public String getNome(){
+    return nome;
+  }
+
+  public String getCpf(){
+    return cpf;
+  }
+
+  public String bairro(){
+    return bairro;
+  }
+
+  public LocalDate getDataDeNascimento(){
+    return dataDeNascimento;
+  }
+
+  public void setNome(String nome){
+    this.nome = nome;
+  }
+
+  public void setCpf(String cpf){
+    this.cpf = cpf;
+  }
+
+  public void setBairro(String bairro){
+    this.bairro = bairro;
+  }
+
+  public void setDataDeNascimento(LocalDate dataDeNascimento){
+    this.dataDeNascimento = dataDeNascimento;
+  }
 }
